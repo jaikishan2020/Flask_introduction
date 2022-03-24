@@ -41,7 +41,7 @@ def delete(id):
         db.session.commit()
         return redirect('/')
     except:
-        return "There was a problem deleting the said task"
+        return "There was a problem deleting the said task from the data base"
 
 @app.route('/update/<int:id>',methods=['POST','GET'])
 def update(id):
