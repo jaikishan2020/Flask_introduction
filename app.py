@@ -52,7 +52,7 @@ def update(id):
             db.session.commit()
             return redirect('/')
         except:
-            return "There was an issue updating your task"
+            return "There was an issue updating your task in the data base "
     else:
         return render_template('update.html',task=task)
 
